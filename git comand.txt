@@ -1,0 +1,22 @@
+git init 初始化本地仓库
+git config --global user.name "youname"
+git config --global user.email "you email addr"
+git add <filename>
+git log 查看提交的版本日志
+git reset --hard HEAD^回退到上一个版本 回退到上3个版本 HEAD~3
+
+    $ makdir ~/hello-world    //创建一个项目hello-world
+    $ cd ~/hello-world       //打开这个项目
+    $ git init             //初始化 
+    $ touch README
+    $ git add README        //更新README文件
+    $ git commit -m 'first commit'     //提交更新，并注释信息“first commit”
+    $ git remote add origin git@github.com:defnngj/hello-world.git     //连接远程github项目  
+    $ git push -u origin master     //将本地项目更新到github项目上去
+
+   查看分支：git branch
+   创建分支：git branch name
+   切换分支：git checkout name
+   创建+切换分支：git checkout –b name
+   合并某分支到当前分支：git merge name
+   删除分支：git branch –d name
